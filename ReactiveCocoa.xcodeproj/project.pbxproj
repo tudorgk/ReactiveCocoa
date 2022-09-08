@@ -1409,6 +1409,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = D04725E019E49ED7006002AA;
@@ -1763,6 +1764,74 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		05440C7E28CA475600BA0D6C /* Alpha */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D047262B19E49FE8006002AA /* Release.xcconfig */;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Alpha;
+		};
+		05440C7F28CA475600BA0D6C /* Alpha */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D047263A19E49FE8006002AA /* Mac-Framework.xcconfig */;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = ReactiveCocoa/Info.plist;
+				USER_HEADER_SEARCH_PATHS = ReactiveCocoa/extobjc;
+			};
+			name = Alpha;
+		};
+		05440C8028CA475600BA0D6C /* Alpha */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D047263719E49FE8006002AA /* Mac-Application.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ReactiveCocoaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Alpha;
+		};
+		05440C8128CA475600BA0D6C /* Alpha */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D047263419E49FE8006002AA /* iOS-Framework.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				INFOPLIST_FILE = ReactiveCocoa/Info.plist;
+				USER_HEADER_SEARCH_PATHS = ReactiveCocoa/extobjc;
+			};
+			name = Alpha;
+		};
+		05440C8228CA475600BA0D6C /* Alpha */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D047263219E49FE8006002AA /* iOS-Application.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ReactiveCocoaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Alpha;
+		};
 		D04725FE19E49ED7006002AA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D047262919E49FE8006002AA /* Debug.xcconfig */;
@@ -2049,6 +2118,7 @@
 				D04725FE19E49ED7006002AA /* Debug */,
 				D047264219E4A00B006002AA /* Test */,
 				D04725FF19E49ED7006002AA /* Release */,
+				05440C7E28CA475600BA0D6C /* Alpha */,
 				D047263D19E4A008006002AA /* Profile */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -2060,6 +2130,7 @@
 				D047260119E49ED7006002AA /* Debug */,
 				D047264319E4A00B006002AA /* Test */,
 				D047260219E49ED7006002AA /* Release */,
+				05440C7F28CA475600BA0D6C /* Alpha */,
 				D047263E19E4A008006002AA /* Profile */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -2071,6 +2142,7 @@
 				D047260419E49ED7006002AA /* Debug */,
 				D047264419E4A00B006002AA /* Test */,
 				D047260519E49ED7006002AA /* Release */,
+				05440C8028CA475600BA0D6C /* Alpha */,
 				D047263F19E4A008006002AA /* Profile */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -2082,6 +2154,7 @@
 				D047262019E49F82006002AA /* Debug */,
 				D047264519E4A00B006002AA /* Test */,
 				D047262119E49F82006002AA /* Release */,
+				05440C8128CA475600BA0D6C /* Alpha */,
 				D047264019E4A008006002AA /* Profile */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -2093,6 +2166,7 @@
 				D047262319E49F82006002AA /* Debug */,
 				D047264619E4A00B006002AA /* Test */,
 				D047262419E49F82006002AA /* Release */,
+				05440C8228CA475600BA0D6C /* Alpha */,
 				D047264119E4A008006002AA /* Profile */,
 			);
 			defaultConfigurationIsVisible = 0;
